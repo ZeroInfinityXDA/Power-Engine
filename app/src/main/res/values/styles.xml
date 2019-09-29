@@ -1,0 +1,69 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme.Light" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorWhite</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="materialCardViewStyle">@style/MaterialCard.Light</item>
+        <item name="floatingActionButtonStyle">@style/FAB.Light</item>
+        <item name="toolbarStyle">@style/Toolbar.Light</item>
+    </style>
+
+    <style name="AppTheme.Dark" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#121212</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="materialCardViewStyle">@style/MaterialCard.Dark</item>
+        <item name="floatingActionButtonStyle">@style/FAB.Dark</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="mt_searchBarColor">#121212</item>
+        <item name="mt_dividerColor">@color/colorDarkTint</item>
+        <item name="mt_navIconTint">@color/colorDarkTint</item>
+        <item name="mt_searchIconTint">@color/colorDarkTint</item>
+        <item name="mt_clearIconTint">@color/colorDarkTint</item>
+        <item name="mt_menuIconTint">@color/colorDarkTint</item>
+        <item name="mt_backIconTint">@color/colorDarkTint</item>
+        <item name="mt_textCursorTint">@android:color/system_notification_accent_color</item>
+        <item name="mt_textColor">@color/colorWhite</item>
+        <item name="mt_hintColor">@color/colorWhite</item>
+        <item name="mt_placeholderColor">@color/colorDarkTint</item>
+        <item name="mt_highlightedTextColor">@android:color/system_notification_accent_color</item>
+    </style>
+
+    <style name="FAB.Light" parent="Widget.Design.FloatingActionButton">
+        <item name="backgroundTint">@color/colorAccent</item>
+    </style>
+
+    <style name="FAB.Dark" parent="Widget.Design.FloatingActionButton">
+        <item name="backgroundTint">@color/colorPrimary</item>
+    </style>
+
+    <style name="MaterialCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="MaterialCard.Light" parent="MaterialCard">
+        <item name="strokeColor">#e0e0e0</item>
+    </style>
+
+    <style name="MaterialCard.Dark" parent="MaterialCard">
+        <item name="strokeColor">#434343</item>
+    </style>
+
+    <style name="Toolbar.Light" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="Toolbar.Dark" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:background">#121212</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+</resources>

@@ -1,0 +1,163 @@
+<resources>
+    <string name="app_name">Power Engine</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_appengine">App Engine</string>
+    <string name="title_profiles">Profiles</string>
+    <string name="title_more">More</string>
+    <string name="loading">Loading…</string>
+    <string name="profile_battery">Battery</string>
+    <string name="profile_balanced">Balanced</string>
+    <string name="profile_performance">Performance</string>
+    <string name="profile_whitelist">Whitelist</string>
+    <string name="no_root_detected">ERROR: ROOT IS REQUIRED FOR THIS FEATURE!</string>
+    <string name="no_root_dialog_title">NO ROOT DETECTED</string>
+    <string name="no_root_dialog_desc">Due to the nature of this app, root is required in order to change kernel
+        parameters such as your CPU clock speeds. Power Engine will be completely useless if you are not rooted.</string>
+    <string name="storage_error">Could not backup app engine data!</string>
+    <string name="cpu_error">ERROR: COULD NOT FIND CPU FREQS! PLEASE REPORT THIS AS A BUG!</string>
+    <string name="positiveButton">Confirm</string>
+    <string name="negativeButton">Cancel</string>
+
+    <!-- Accessibility Service -->
+    <string name="accessibility_service_label">Power Engine</string>
+    <string name="accessibility_service_info">The service will detect ONLY the package name of the app
+    you are currently running. The information will be used for Power Engine to search if the
+    app\'s package name is a known app by checking it with the app engine. This is to trigger the event \"window state changed\"
+    which will run Power Engine\'s App Engine and find the suitable profile the current app should use.</string>
+    <string name="serviceError">An error occurred with Power Engine\'s Accessibility Service. Please submit a bug report in
+        Power Engine > More (last tab) > Report a bug.</string>
+    <string name="batteryopt">To prevent Android from killing the service automatically, please disable battery optimisations
+        for Power Engine. If you do not do this, Power Engine can stop running randomly. Battery optimization -> All apps ->
+        Power Engine -> Don\'t optimize</string>
+
+    <!-- Dashboard -->
+    <string name="button_service">Enable/Disable Service</string>
+    <string name="root_access">Root: </string>
+    <string name="version">Version: </string>
+
+    <!-- App Engine -->
+    <string name="search">Search</string>
+    <string name="searchHint">Enter an app name</string>
+    <string name="setAllBattery">Set all Battery</string>
+    <string name="setAllBalanced">Set all Balanced</string>
+    <string name="setAllPerformance">Set all Performance</string>
+    <string name="setAllBatteryNotif">All apps set to Battery profile!</string>
+    <string name="setAllBalancedNotif">All apps set to Balanced profile!</string>
+    <string name="setAllPerformanceNotif">All apps set to Performance profile!</string>
+
+    <!-- Profiles -->
+    <string name="profileError">One or more values could not be found. Please go to \"More (last tab) > Report a bug\" to
+        help me fix the bug! Meanwhile Power Engine will not work and the profile tab will remain at \"Loading…\" to
+        prevent the app from crashing.</string>
+    <string name="clusterTitle">CPU CLUSTER</string>
+    <string name="cluster">Cluster</string>
+    <string name="cpuFreqTitle">CPU FREQUENCIES</string>
+    <string name="minfreq">Min:</string>
+    <string name="maxfreq">Max:</string>
+    <string name="maxfreq_dialog">Max Frequency</string>
+    <string name="minfreq_dialog">Min Frequency</string>
+    <string name="governorTitle">CPU GOVERNORS</string>
+    <string name="governor">Governor:</string>
+    <string name="gpuFreqTitle">GPU FREQUENCIES</string>
+
+    <!-- More Menus -->
+    <string name="more_help">Help</string>
+    <string name="more_about">About</string>
+    <string name="about_desc">Power Engine is a tool to help improve efficiency of your device.\n\nWith the use of the
+        Accessibility Service, Power Engine is able to dynamically switch between different profiles on the fly without
+        any user interaction. With App Engine, users can configure what app they want to set for which profile, this
+        will be used for the Accessibility Service to determine what profile to switch to. Users are also able to
+        configure each profile to their liking.\n\nPower Engine supports all ARM SoCs, from Android Nougat and above.
+        It is recommended that you do not use any other tools that may modify any of the components that you see in
+        Power Engine\'s profile configuration page to prevent any conflicts to this tool.</string>
+    <string name="more_preferences">Preferences</string>
+    <string name="more_bugreport">Report a bug</string>
+    <string name="bugreport_desc">READ THIS BEFORE REPORTING A BUG: Please reset app data in Preferences to see if this
+        has fixed your problem first before reporting this as a bug!\n\nIf you have discovered a bug, please send me the
+        details below:\n\n- Device and SoC (CPU)\n- Are you on a custom kernel or custom ROM?\n- Android version\n- A
+        detailed description of the bug and how to reproduce the bug\n\nNecessary logs are automatically generated for you
+        in \"Internal Storage/Android/data/com.zeroinfinity.powerengine/files\".</string>
+    <string name="more_donation_wall">Donation Wall</string>
+    <string name="donation_wall_desc">Thank you to all of these people who have further supported me:</string>
+    <string name="more_backup_restore">Backup and Restore</string>
+    <string name="backup_restore_hint">Backups are saved as XML files and Restore will only read XML files.</string>
+    <string name="backup_appengine">Backup App Engine data</string>
+    <string name="backup_profile">Backup Profile data</string>
+    <string name="restore_appengine">Restore App Engine data</string>
+    <string name="restore_profile">Restore Profile data</string>
+    <string name="backup_hint">Enter a file name</string>
+    <string name="restore_hint">Select a file</string>
+    <string name="backup">Backup</string>
+    <string name="restore">Restore</string>
+    <string name="backup_success">Backup successful!</string>
+    <string name="restore_success">Restore successful!</string>
+    <string name="read_failed_appengine">Error: invalid backup file for app engine data!</string>
+    <string name="read_failed_profile">Error: invalid backup file for profile data!</string>
+    <string name="read_failed_structure_error">Error: There is something wrong with the XML structure in the backup file!
+        Please check and fix any errors!</string>
+
+    <!-- Preferences -->
+    <string name="dark_theme_title">Dark theme</string>
+    <string name="dark_theme_desc">Enables dark theme</string>
+    <string name="dark_theme_notice">Please restart the app for changes to take effect!</string>
+    <string name="systemAppsTitle">Show system apps</string>
+    <string name="systemAppsDesc">Shows apps installed in the /system partition as well as launchers.</string>
+    <string name="notificationsTitle">Enable notification</string>
+    <string name="notificationDesc">Enables an on-going notification to ensure Power Engine is still working and shows
+        what current app has been detected.</string>
+    <string name="chargingModeTitle">Enable Charging Mode</string>
+    <string name="chargingModeDesc">Performance profile will be forced at all times when charging.</string>
+    <string name="wipeDataTitle">Reset app data</string>
+    <string name="wipeDataDesc">Resets Power Engine\'s app data, the app will close after pressing the reset button.
+        If you have found a bug or have a problem, please try this option first before submitting a bug report.
+        Profile data and App Engine data will both be reset.</string>
+    <string name="wipeDataButton">RESET</string>
+    <string name="wipeDataAlertTitle">Are you sure?</string>
+    <string name="wipeDataAlertDesc">This cannot be undone and you will lose your profile and app engine data if they
+        are not backed up!</string>
+
+    <!-- Help -->
+    <string name="q1">What does this app do?</string>
+    <string name="a1">Please refer to the \"About\" section at the bottom of this page.</string>
+    <string name="q2">Every app is using balanced mode, it will not switch!</string>
+    <string name="a2">You need to set up App Engine manually for the first time, you will have to judge which app should
+        use which profile.</string>
+    <string name="q3">Every profile uses the same configs, the CPU frequencies do not change!</string>
+    <string name="a3">You also need to set up your profiles manually for the first time too, by default all profiles are
+        using the default values of your device.</string>
+    <string name="q4">How do I uninstall this app?</string>
+    <string name="a4">If you don\'t want to use this app anymore, simply uninstall the app and reboot your device to
+        restore default values.</string>
+    <string name="q5">Why does this app need root?</string>
+    <string name="a5">You cannot change kernel parameters in the sysfs without root. This includes changing your CPU and
+        GPU frequencies, CPU governors etc. It is impossible to modify these without root.</string>
+    <string name="q6">How do I root my phone?</string>
+    <string name="a6">Google it.</string>
+    <string name="q7">How can I tell if this app is working?</string>
+    <string name="a7">Install either DevCheck or CPUFloat from the play store to monitor your freqs in real-time as an
+        overlay. Switch between apps and see if the frequencies go up to only what you have set it as in the profiles.
+        For example, you set an app as battery so CPU behaviour from the monitoring apps should only go up to
+        whatever you set the max CPU freq in the battery profile. It should not go above the max CPU freq value you
+        set in that profile.</string>
+    <string name="q8">Power Engine doesn\'t work for some games, profile values aren\'t being applied!</string>
+    <string name="a8">Due to the nature of accessibility services, it can only detect UI views in apps. Games are usually
+        wrapped inside a launchable android application, so all the UI elements of games are inside the game itself, which
+        the accessibility service will not be able to detect.</string>
+
+    <!-- Notification -->
+    <string name="channel_name">General</string>
+    <string name="channel_description">Displays what profile is currently in use and what app was detected.</string>
+    <string name="running">Power Engine is running</string>
+
+    <!-- Shared Preferences Tags -->
+    <string name="appProfileSharedPrefs">com.zeroinfinity.powerengine.APP_LIST_DATA</string>
+    <string name="profileBatteryPrefs">com.zeroinfinity.powerengine.BATTERY_PROFILE_DATA</string>
+    <string name="profileBalancedPrefs">com.zeroinfinity.powerengine.BALANCED_PROFILE_DATA</string>
+    <string name="profilePerformancePrefs">com.zeroinfinity.powerengine.PERFORMANCE_PROFILE_DATA</string>
+    <string name="defaultSharedPrefs">com.zeroinfinity.powerengine.PREFERENCES</string>
+    <string name="logging">logging</string>
+    <string name="system_app">system_app</string>
+    <string name="notifications">notifications</string>
+    <string name="dark_theme">dark_theme</string>
+    <string name="charging_mode">charging_mode</string>
+</resources>
